@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.header {
+    width: calc(100% - 200px);
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.header .profile {
+    cursor: pointer;
+}
+
+.header .profile i{
+    font-size: 30px;
+    color: white;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar .logo img {
+    width: 125px;
+    height: auto;
+    margin-left: 35px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main {
+    margin-left: 200px;
+    margin-top: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.main h1 {
+    margin-top: 0px;
+}
+
+.main form {
+    margin-top: 20px;
+}
+
+.main form h3 {
+    margin-top: 0;
+}
+
+.main form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.main form input,
+.main form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.main form input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.main form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.main button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid #333;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.main button.active {
+    background-color: #333;
+    color: white;
+}
+
+.main button:hover {
+    background-color: #555;
+    color: white;
+}
