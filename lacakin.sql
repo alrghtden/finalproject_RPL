@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2024 at 06:29 PM
+-- Generation Time: Jun 07, 2024 at 08:42 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -48,7 +48,8 @@ CREATE TABLE `data_kehilangan` (
 --
 
 INSERT INTO `data_kehilangan` (`id`, `full_name`, `npm`, `phone_number`, `nama_barang`, `lokasi`, `tanggal`, `waktu`, `deskripsi`, `foto`, `status`, `klaim_info`, `tanggal_klaim`) VALUES
-(1, 'user2', '9876543210', '0123456789', 'Jam Tangan', 'Toilet', '2024-06-06', '11:30:00', 'jam tangan warna hitam', '', 'diklaim', 'kK3CH7', '2024-06-06');
+(1, 'user2', '9876543210', '0123456789', 'Jam Tangan', 'Toilet', '2024-06-06', '11:30:00', 'jam tangan warna hitam', '', 'diklaim', 'kK3CH7', '2024-06-06'),
+(2, 'user2', '9876543210', '0123456789', 'Dompet', 'Perpustakaan', '2024-06-07', '09:30:00', 'warna coklat', '20240605_112047.jpg', 'belum_diklaim', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -78,7 +79,8 @@ CREATE TABLE `data_temuan` (
 
 INSERT INTO `data_temuan` (`id`, `full_name`, `npm`, `phone_number`, `nama_barang`, `lokasi`, `tanggal`, `waktu`, `deskripsi`, `foto`, `status_klaim`, `klaim_info`, `tanggal_klaim`) VALUES
 (1, 'user1', '0123456789', '9876543210', 'Jam Tangan', 'Toilet', '2024-06-06', '12:00:00', 'warna hitam', '20240605_180752.jpg', 'diklaim', 'kK3CH7', '2024-06-06'),
-(2, 'user1', '0123456789', '9876543210', 'TWS', 'Kantin', '2024-06-06', '15:30:00', 'tws merk anker warna hitam', '20240605_180712.jpg', 'belum_diklaim', NULL, NULL);
+(2, 'user1', '0123456789', '9876543210', 'TWS', 'Kantin', '2024-06-06', '15:30:00', 'tws merk anker warna hitam', '20240605_180712.jpg', 'belum_diklaim', NULL, NULL),
+(3, 'user1', '0123456789', '9876543210', 'Dompet', 'Perpustakaan', '2024-06-07', '13:30:00', 'warna coklat', '20240605_112047.jpg', 'belum_diklaim', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -135,13 +137,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `data_kehilangan`
 --
 ALTER TABLE `data_kehilangan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `data_temuan`
 --
 ALTER TABLE `data_temuan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
